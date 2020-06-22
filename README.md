@@ -6,8 +6,8 @@ STUDENT ID: 10677819
 
 TOPIC:BUILDING A COVID-19 APP THAT SHOWS WORLD AND COUNTRY STATISTICS OF COVID-19 CASES
 
-The application has been published on ""
-under the username Samuel Appau(Samuel12345) and password is OpenUp41 on expo
+The application has been published on "https://expo.io/@samuel12345/covid-tracker"
+under the username samuel12345 and password OpenUp41 on expo
 
 
 RUNNING THE APPLICATION 
