@@ -2,11 +2,16 @@ import React from 'react';
 import { Platform } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
-
+import MenuButton from '../components/Menubar'
+import SearchButton from '../components/SearchButton'
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
-import CloudScreen from '../screens/CloudScreen';
-import ProfileScreen from '../screens/ProfileScreen';
+import NotificationScreen from '../screens/NotificationScreen';
+import ReportScreen from '../screens/ReportScreen';
+import EntryScreen from '../screens/EntryScreen'
+import CountryScreen from '../screens/CountryScreen'
+import CovidInformation from '../screens/information'
+import SymptomsScreen from '../screens/SymptomsScreen'
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -34,45 +39,64 @@ HomeStack.navigationOptions = {
 
 HomeStack.path = '';
 
-const DocumentStack = createStackNavigator(
+const NotificationStack = createStackNavigator(
   {
-    Links: CloudScreen,
+    Links:NotificationScreen,
   },
   config
 );
 
-DocumentStack.navigationOptions = {
-  tabBarLabel: 'Settings',
+NotificationStack.navigationOptions = {
+  tabBarLabel: 'Notification',
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name="ios-settings" />
+    <TabBarIcon focused={focused} name="ios-notifications" />
   ),
 };
 
-DocumentStack.path = '';
+NotificationStack.path = '';
 
 
-const ProfileStack = createStackNavigator(
+const ReportStack = createStackNavigator(
   {
-    Settings: ProfileScreen,
+    Settings: ReportScreen,
   },
   config
 );
 
-ProfileStack.navigationOptions = {
+ReportStack.navigationOptions = {
   tabBarLabel: 'Report',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name="ios-send"/>
   ),
 };
 
-ProfileStack.path = '';
+ReportStack.path = '';
 
-const tabNavigator = createBottomTabNavigator({
+
+
+const CountryStack = createStackNavigator(
+  {
+    Settings: CountryScreen,
+  },
+  config
+);
+
+CountryStack.navigationOptions = {
+  tabBarLabel: 'Statistics',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon focused={focused} name="ios-stats"/>
+  ),
+};
+
+CountryStack.path = '';
+
+const TabNavigator = createBottomTabNavigator({
   HomeStack,
-  DocumentStack,
-  ProfileStack
+  NotificationStack,
+  ReportStack,
+  CountryStack
 });
 
-tabNavigator.path = '';
+TabNavigator.path = '';
 
-export default tabNavigator;
+export default TabNavigator;

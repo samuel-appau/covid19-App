@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "TwitterClone",
-    "slug": "proj",
+    "name": "Covid Tracker App",
+    "slug": "covid-tracker",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [

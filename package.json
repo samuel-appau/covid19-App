@@ -12,15 +12,27 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
     "@expo/samples": "~36.0.0",
     "@expo/vector-icons": "~10.0.0",
+    "@haskkor/react-native-recaptchav3": "^1.2.0",
+    "@react-navigation/native": "^5.2.3",
     "@react-navigation/web": "~1.0.0-alpha.9",
+    "apollo-cache-inmemory": "^1.6.5",
+    "apollo-client": "^2.6.8",
+    "apollo-link-http": "^1.5.17",
     "expo": "~36.0.0",
     "expo-asset": "~8.0.0",
     "expo-constants": "~8.0.0",
+    "expo-firebase-recaptcha": "^1.1.0",
     "expo-font": "~8.0.0",
     "expo-web-browser": "~8.0.0",
+    "git": "^0.1.5",
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
+    "parser": "^0.1.4",
     "react": "~16.9.0",
+    "react-apollo": "^3.1.5",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
     "react-native-gesture-handler": "~1.5.0",
@@ -29,7 +41,8 @@
     "react-native-web": "~0.11.7",
     "react-navigation": "~4.0.10",
     "react-navigation-stack": "~1.10.3",
-    "react-navigation-tabs": "~2.6.2"
+    "react-navigation-tabs": "~2.6.2",
+    "visitor": "0.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
