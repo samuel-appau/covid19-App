@@ -16,7 +16,7 @@ return(
         <ScrollView>
             <View>
         <Text style={{fontWeight:"bold",fontSize:19}}>What is Covid-19</Text>
-        <Text style={{ fontSize:12,color: '#000',textAlign: 'left',fontFamily:"Arial"}}>
+        <Text style={{ fontSize:14,color: '#000',textAlign: 'left',fontFamily:"Arial"}}>
 
         COVID-19 is the infectious disease caused by the most
         recently discovered coronavirus. This new virus and 
@@ -27,7 +27,7 @@ return(
       
 
         <Text style={{fontWeight:"bold",fontSize:19,marginTop:16}}>Symptoms of Covid</Text>
-        <Text style={{fontSize:12,color: '#000',textAlign: 'left',fontFamily:"Arial"}}>
+        <Text style={{fontSize:14,color: '#000',textAlign: 'left',fontFamily:"Arial"}}>
         The most common symptoms of COVID-19 are fever, 
         dry cough,and tiredness. Other symptoms that 
         are less common and may affect some patients 
@@ -41,7 +41,7 @@ return(
 
 
         <Text style={{fontWeight:"bold",fontSize:19,marginTop:16}}>Prevention</Text>
-        <Text style={{ fontSize:12,color: '#000',textAlign: 'left',fontFamily:"Arial"}}>
+        <Text style={{ fontSize:14,color: '#000',textAlign: 'left',fontFamily:"Arial"}}>
         Regularly and thoroughly clean your hands 
         with an alcohol-based hand rub or wash them 
         with soap and water.

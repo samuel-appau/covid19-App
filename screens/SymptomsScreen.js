@@ -3,17 +3,15 @@ import { ScrollView, StyleSheet,Text,View,TouchableOpacity,Button } from 'react-
 import { ExpoLinksView } from '@expo/samples';
 import {Ionicons} from '@expo/vector-icons';
 import MenuButton from '../components/Menu'
+
 export default function SymptomsScreen({navigation}) {
-
-  
-
   return (
 
     <View style={{flex:1}}>
         <View style={{borderBottomColor:'#000',marginTop:18,flexDirection:'row',borderBottomWidth:1,borderBottomColor:'black'}}>
         <MenuButton navigation={navigation}/>
             
-          <Text style={{fontSize:20,fontWeight:'bold',marginLeft:38}}>Symptoms Logging</Text>
+          <Text style={{fontSize:22,fontWeight:'bold',marginLeft:68,marginTop:-10}}>Symptoms Logging</Text>
           </View>
     <ScrollView>
     <View>
