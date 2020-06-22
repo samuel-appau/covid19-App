@@ -30,6 +30,9 @@ screen:CovidInformation
 },
 Symptoms:{
   screen:SymptomsScreen
+},
+Logout:{
+  screen:PhoneAuth
 }
 
   },
@@ -45,7 +48,8 @@ export default createAppContainer(
     // dash:TabNavigator,
     dash:DrawerNavigator,
     country:CountryScreen,
-  
+    info:CovidInformation,
+    symptoms:SymptomsScreen
   }),
   
 );

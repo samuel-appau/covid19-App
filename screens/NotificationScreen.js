@@ -48,11 +48,11 @@ export default class NotificationScreen extends Component{
       
         <FlatList
           data={this.state.students}
-          numColumns="2"
+          
           renderItem={({ item }) =>
-          ( <View style={{borderBottomColor:"ash",borderBottomWidth:1,marginBottom:10,paddingHorizontal:3,paddingVertical:11}}>
-               <View style={{flexDirection:'row'}}>
-              <View style={{}}>
+          ( <View style={{borderBottomColor:"ash",borderBottomWidth:1,marginBottom:4,paddingHorizontal:3,paddingVertical:11}}>
+               <View style={{}}>
+              <View style={{flexDirection:'row',justifyContent:'space-between'}}>
                 <Text style={{fontSize:9,fontWeight:'bold'}}>
                       {item.name.name} 
                 </Text>
@@ -66,7 +66,7 @@ export default class NotificationScreen extends Component{
               </View>
 
                <View>
-                   <Text style={{fontSize:6,fontSize:12,marginLeft:12,fontWeight:'bold'}}>
+                   <Text style={{fontSize:14,marginLeft:2,fontWeight:'bold'}}>
                         {item.condition.condition}
                     </Text>
                 </View>

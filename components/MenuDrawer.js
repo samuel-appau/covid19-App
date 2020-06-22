@@ -27,13 +27,15 @@ render(){
         {this.navLink('home','home')} 
         {this.navLink('Info','Info')}
         {this.navLink('Symptoms','Symptoms')}
+        {this.navLink('Logout','Logout')}
+
        
         </View>
 
-        <View style={{height:80,marginTopWidth:1,flexDirection:'row',borderWidthColor:'black',backgroundColor:'black' }}>
-        <AntDesign name="apple1" size={24} color="white" />
-        <AntDesign name="android1" size={24} color="white" />
-        <AntDesign name="logout" size={24} color="white" />
+        <View style={{height:80,marginTopWidth:1,flexDirection:'row',justifyContent:'space-between',borderWidthColor:'black',backgroundColor:'black' }}>
+        <AntDesign name="apple1" size={24} color="white" style={{marginRight:7}}/>
+        <AntDesign name="android1" size={24} color="white" style={{marginRight:7}}/>
+        <AntDesign name="logout" size={24} color="white" style={{marginRight:5}} />
 
         </View>
     

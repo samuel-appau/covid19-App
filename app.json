@@ -25,6 +25,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": " The application has features that addresses the following needs\n 1. Remote Monitoring of Citizens symptoms\n 2. Covid-19 related information dissemination and public education\n 3. Administration of COVID-19 self-assessment\n 4. Dissemination of worldwide and country by country statistics of the pandemic\n 5. Reporting of potential cases",
+    "githubUrl": "https://github.com/samuel-appau/covid19-App"
   }
 }
